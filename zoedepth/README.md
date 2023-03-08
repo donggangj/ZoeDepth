@@ -9,7 +9,7 @@
 
 [[Paper]](https://arxiv.org/abs/2302.12288)
 
-![teaser](assets/zoedepth-teaser.png)
+![teaser](../assets/zoedepth-teaser.png)
 
 ## **Table of Contents** <!-- omit in toc -->
 - [**Usage**](#usage)
@@ -56,12 +56,13 @@ Clone this repo:
 git clone https://github.com/isl-org/ZoeDepth.git && cd ZoeDepth
 ```
 #### Using local torch hub
-You can use local source for torch hub to load the ZoeDepth models, for example: 
+You can use local source for torch hub to load the ZoeDepth models, for example:
+
 ```python
 import torch
 
 # Zoe_N
-model_zoe_n = torch.hub.load(".", "ZoeD_N", source="local", pretrained=True)
+model_zoe_n = torch.hub.load("..", "ZoeD_N", source="local", pretrained=True)
 ```
 
 #### or load the models manually
